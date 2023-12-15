@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            display: inline-block;
+            margin-right: 500px;
+        }
+
+        nav {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 10px;
+        }
+        .text{
+            margin-left: 50px;
+            
+        }
+        .round-photo-container {
+            overflow: hidden;
+            border-radius: 50%;
+            width: 250px;
+            height: 250px;
+        }
+
+        .round-photo {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           border-radius: 50%;
+        }
+           button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-left: 20px;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+        .square {
+            width: 150px;
+            height: 150px;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .emoji {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .custom-square {
+            width: 150px;
+            height: 150px;
+            background-color: #000; 
+            color: #ffffff; 
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ffffff; /* White Border */
+        }
+
+        .custom-emoji {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        form {
+            display: grid;
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #1E4A64;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #1E4A64;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005580;
+        }
+        #projects {
+    background-color: #f5f5f5;
+    padding: 50px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 300px; 
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    margin-left: 400px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.project h3 {
+    color: #333;
+}
+
+.project p {
+    color: #666;
+}
+footer {
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.contact-info,
+.social-media,
+.copyright {
+    margin-bottom: 20px;
+}
+
+
+.contact-info h3,
+.social-media h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+
+.social-media a {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+
+.social-media a:hover {
+    color: #ffecf0;
+}
+
+
+
+.copyright p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Leonis Hysa</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<br><br><br><br>
+<div class="round-photo-container" style="margin-left: 900px; margin-top: 50px;">
+            <img src="foto.jpg" class="round-photo">
+        </div>
+<div style="margin-top: -250px; margin-left: 30px;">
+    <h3 style="color: #fff;" class="text">Hi, I'm</h3>
+    <h2 style="color: #fff;" class="text">Leonis Hysa</h2>
+    <p style="color: #fff;" class="text">Student at "Herman Gmeiner" ict highschool,<br>
+    I specialize in developing fluid web interactions<br>
+    that provide a seamaless and intuitive experience<br>
+    for users.</p>
+    <button style="margin-left: 50px; ">About me</button>
+    <button style="margin-left: 20px; ">Projects</button>
+</div>
+<br>
+<div style="margin-left: 80px; color: whitesmoke; margin-top: 30px">
+    <h3>About me:</h3>
+    <p >Hi, my name is Leonis Hysa, i am a Junior web developer.I specialize in crafting responsive and user-friendly websites that not only look great but also deliver seamless user experiences.I've honed my skills in HTML, CSS, and JavaScript, and I'm always enthusiastic about learning and implementing the latest technologies to enhance my projects. I thrive on creative problem-solving and enjoy the challenge of turning design concepts into functional and interactive websites. Whether it's building the front end with a keen eye for design details or delving into the back end to ensure smooth functionality, I'm dedicated to delivering high-quality and performant solutions.  </p>
+    <h1 style="font-size: 60px;  ">2+</h1><p style="margin-top:-100px; margin-left:80px;">Seasoned by years of hands-on experience, I bring expertise in the specialized realm of app development. My commitment extends beyond functionality – it's about sculpting a digital landscape where end users effortlessly navigate and engage. Join me in the pursuit of crafting applications that transcend the ordinary, ensuring a harmonious web experience for all.</p>
+    <div class="square" style="background-image: url(https://www.freecodecamp.org/news/content/images/2022/12/main-image.png); background-size: cover; margin-left:300px;">
+        <p>Web Development</p></div>
+        <div class="square" style="margin-left:200px; margin-top:-190px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEWmvlnVsxaiN-dHkj5MvbFvg5knlIjn-w-O8n-oZyN3umpYJ7AH729ZU_wA&s;) ; margin-left:500px;">
+        
+        <p>C# Programming</p></div>
+        <div class="square" style="margin-left:400px; margin-top:-190px; background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg); background-size:cover; margin-left:700px;"  >
+        <span class="emoji"></span>
+        <p>C++ Programming</p></div>
+<div style="margin-left: 80px; color: whitesmoke; margin-top: 30px">
+    <h3 >The services i offer:</h3>
+    <div class="custom-square" style="margin-left:150px">
+        <span class="custom-emoji">💻</span>
+        <p>Web Development</p>
+        <p style="font-size:10px;">ICrafting immersive digital experiences that adapt seamlessly to every screen. 💡 Transforming static websites into dynamic, engaging platforms.</p>
+    </div>
+
+    <div class="custom-square" style="margin-left:450px; margin-top:-190px">
+        <span class="custom-emoji">🔍</span>
+        <p>C# Programming</p>
+        <p style="font-size:10px;">Innovative solutions for dynamic web development, ensuring websites evolve and respond dynamically to user interactions.</p>
+    </div>
+
+    <div class="custom-square" style="margin-left:750px; margin-top:-190px">
+        <span class="custom-emoji">🤖</span>
+        <p>C++ Programming</p>
+        <p style="font-size:10px;">Expert in crafting responsive designs that elegantly scale across diverse devices. Ensuring a flawless user experience, regardless of screen size.</p>
+    </div>
+    </div>
+    <div style="padding-left:120px; color: whitesmoke; margin-top: 90px">
+</div>
+        <div class="project" style="background-image: url(https://alao-media.s3.eu-central-1.amazonaws.com/blogs/img/Frame_for_blog_cover-1.jpg);">
+            <a href="weather.html"> 
+                
+           
+            <h3>Project 1</h3>
+            <p>Creating a webpage that gives you information about the weather in different cities.</p> </a>
+        </div>
+<div class="container">
+        <h2 style="color: #1E4A64;">Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <br><br>
+<div>
+        <footer style="background-color: #333; color: whitesmoke; margin-left: -100px;">
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Email: leonishysa35@gmail.com</p>
+        <p>Phone: +355 685440486</p>
+    </div>
+
+
+    <div class="copyright">
+        <p>&copy; 2023 Leonis. All rights reserved.</p>
+    </div>
+</footer>
+    </div>
+</body>
+</html>
